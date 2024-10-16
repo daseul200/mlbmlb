@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>MLB</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/icon">
+
+    <!-- fullpage.css -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+    <!-- 스와이퍼 css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" type="text/css"/>
+    <!-- slick slide css cdn -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!-- slick slide 테마 연결 -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <!-- splide css 연결 -->
+    <link rel="stylesheet" href="css/splide.min.css" type="text/css">
+    <!-- 외부 css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- fullpage.js -->
+    <script src="js/jquery.fullPage.js"></script>
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/3b1da05c7f.js" crossorigin="anonymous"></script>
+    <!-- swiper slide js cdn -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- tweenmax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- slick slide js cdn -->
+    <!-- <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <!-- splide js 연결 -->
+    <script src="js/splide.min.js"></script>
+    <!-- 외부 js연결 -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <!-- 로고를 배경이미지로 넣기(반응형) -->
+        <div class="logo">
+            <a href="index.html"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">
+                        <!-- awesome icon -->
+                        <i class="fa-solid fa-circle"></i>
+                        <!-- 주메뉴 애니메이션 -->
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                                <p>의류</p>    
+                                <p>APPAREL</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">MLB 셋업</a></li>
+                        <li><a href="#">MLB 바람막이</a></li>
+                        <li><a href="#">아우터</a></li>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">하의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">
+                        <!-- awesome icon -->
+                        <i class="fa-solid fa-circle"></i>
+                        <!-- 주메뉴 애니메이션 -->
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                                <p>모자</p>    
+                                <p>CAP</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">볼캡</a></li>
+                        <li><a href="#">스냅백</a></li>
+                        <li><a href="#">비니</a></li>
+                        <li><a href="#">HAT</a></li>
+                        <li><a href="#">기타모</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">
+                        <!-- awesome icon -->
+                        <i class="fa-solid fa-circle"></i>
+                        <!-- 주메뉴 애니메이션 -->
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                                <p>신발</p>    
+                                <p>SHOES</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">운동화</a></li>
+                        <li><a href="#">샌들</a></li>
+                        <li><a href="#">슬리퍼</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">
+                        <!-- awesome icon -->
+                        <i class="fa-solid fa-circle"></i>
+                        <!-- 주메뉴 애니메이션 -->
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                                <p>가방</p>    
+                                <p>BAG</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">백팩</a></li>
+                        <li><a href="#">힙색</a></li>
+                        <li><a href="#">크로스백</a></li>
+                        <li><a href="#">호보벡</a></li>
+                        <li><a href="#">버킷백</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 주메뉴 -->
+                    <a href="#">
+                        <!-- awesome icon -->
+                        <i class="fa-solid fa-circle"></i>
+                        <!-- 주메뉴 애니메이션 -->
+                        <div class="main_menu">
+                            <div class="main_menu_box">
+                                <p>악세서리 & 애견</p>    
+                                <p>ACC & PET</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 서브메뉴 -->
+                    <ul class="sub">
+                        <li><a href="#">악세서리</a></li>
+                        <li><a href="#">PET</a></li>
+                        <li><a href="#">쥬얼리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="right_menu">
+            <ul>
+                <li><a href="#"><span><img src="img/wit-login.png" alt="로그인"></span><p>LOGIN</p></a></li>
+                <li><a href="#"><span><img src="img/wit-basket.png" alt="장바구니"></span><p>MY BASKET</p></a></li>
+            </ul>
+        </div>
+        <!-- 모바일에서 보이는 메뉴 버튼 -->
+        <div class="menu_btn">
+            <a href="#">
+                <img src="img/menu_icon.png" alt="logo모바일">
+            </a>
+        </div>
+        <!-- 모바일에서 보이는 메뉴 영역 -->
+        <div class="mobile_nav">
+            <div class="mobile_nav_in">
+                <div class="mobile_top_menu">
+                    <ul>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">MY BASKET</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">APPAREL<i class="fa-solid fa-angle-down"></i></a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">MLB 셋업</a></li>
+                                <li><a href="#">MLB 바람막이</a></li>
+                                <li><a href="#">아우터</a></li>
+                                <li><a href="#">상의</a></li>
+                                <li><a href="#">하의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">CAP<i class="fa-solid fa-angle-down"></i></a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">볼캡</a></li>
+                                <li><a href="#">스냅백</a></li>
+                                <li><a href="#">비니</a></li>
+                                <li><a href="#">HAT</a></li>
+                                <li><a href="#">기타모</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">SHOES<i class="fa-solid fa-angle-down"></i></a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">운동화</a></li>
+                                <li><a href="#">샌들</a></li>
+                                <li><a href="#">슬리퍼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">BAG<i class="fa-solid fa-angle-down"></i></a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">백팩</a></li>
+                                <li><a href="#">힙색</a></li>
+                                <li><a href="#">크로스백</a></li>
+                                <li><a href="#">호보벡</a></li>
+                                <li><a href="#">버킷백</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- 주메뉴 -->
+                            <a href="#">ACC & PET<i class="fa-solid fa-angle-down"></i></a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub">
+                                <li><a href="#">악세서리</a></li>
+                                <li><a href="#">PET</a></li>
+                                <li><a href="#">쥬얼리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile_sns">
+                    <ul>
+                        <li><a href="#"><img src="img/blog.png" alt="블로그"></a></li>
+                        <li><a href="#"><img src="img/instagram.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="img/facebook.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/youtube.png" alt="유튜브"></a></li>
+                    </ul>
+                </div>
+                <!-- 모바일 메뉴 영역 닫기 버튼 -->
+                <div class="mobile_close">
+                    <a href="#">
+                        <img src="img/close.png" alt="close">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sub_bg">
+            
+        </div>
+    </header>
+    <div class="wrap" id="fullpage">
+        <section class="section visual">
+            <!-- swiper slide -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide s1">
+                      <div>
+                        <div class="s1-left">
+                            <a href="#">
+                                <h1>MLB로 가득한<br>에스파의 리얼 파이프</h1>
+                                <p>#셋업 #원피스 #맨투맨 #백 #슈즈</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide s2">
+                      <div>
+                        <div class="s2-left">
+                            <a href="#">
+                                <h1>페이즐리 컬렉션으로<br>즐기는 썸머 라이프</h1>
+                                <p>#맨투맨 #가방 #셋업셔츠 #슈즈</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide s3">
+                    <div>
+                        <div class="s3-left">
+                            <a href="#">
+                                <h1>모두의 모자<br>#MLB볼캡</h1>
+                                <p>#CP88 #CP77 #CP66 #CP55</p>
+                            </a>
+                        </div>
+                        <div class="s3-right">
+                            <span><img src="img/slide3 img.png" alt="모자"></span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide s4">
+                    <div>
+                        <div class="s4-left">
+                            <h1>Family day</h1>
+                            <span>사랑하는 사람들과 함께라서 행복한 계절<br>MLB 패밀리템 & 키즈템으로 전하는 마음</span>
+                            <p>취향저격 선물 제안<br>
+                              ▷너와 나 세트로 #캡 #슈즈</p>
+                        </div>
+                
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>          
+        </section>
+        <section class="section banner">
+            <div class="banner-text">
+                <p>#MLB모노그램</p>
+                <h1>MLB with aespa</h1>
+            </div>
+            <div class="contents">
+                <ul>
+                    <li class="hover_ani"><a href="#">
+                        <div class="li_bg bg1"></div>
+                        <div class="li_des">
+                            <h3>MONOGRAM</h3>
+                            <p>DENIM</p>
+                            <button>자세히보기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </a></li>
+                    <li class="hover_ani"><a href="#">
+                        <div class="li_bg bg2"></div>
+                        <div class="li_des">
+                            <h3>MONOGRAM</h3>
+                            <p>DIA</p>
+                            <button>자세히보기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </a></li>
+                    <li class="hover_ani"><a href="#">
+                        <div class="li_bg bg3"></div>
+                        <div class="li_des">
+                            <h3>MONOGRAM</h3>
+                            <p>BASIC</p>
+                            <button>자세히보기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section six_tab">
+            <div class="six_tab_text">
+                <p>나만의 개성대로 더 자유롭게</p>
+                <h1>#MLB볼캡</h1>
+            </div>
+            <!-- slick slider -->
+            <div class="product">
+                <div class="p1">
+                    <div class="product_left">
+                        <h3>조이 언스트럭쳐 볼캡 뉴욕앙키스</h3>
+                        <p>N-CLASSIC FIT(뉴클래식 핏)은<br>
+                            기존 캡 보다 챙의 굴곡이 약하고<br>
+                            언스트럭쳐 뒤쪽 고깊이가 사대적으로 얇은<br>
+                            핏의 디자인입니다.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>자세히보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>32CP88111-50X</i>
+                        <div class="product_img">
+                            <img src="img/cap1.png" alt="모자1">
+                        </div>
+                    </div>
+                </div>
+                <div class="p2">
+                    <div class="product_left">
+                        <h3>조이 언스트럭쳐 볼캡 뉴욕앙키스</h3>
+                        <p>기존트윌(TWILL) 조직에서 차별화된<br>
+                            아웃룻으로, 광택감을 더해<br>
+                            강화된 조직감과 단단한 느낌의<br>
+                            원단입니다.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>자세히보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>3ACP8801N-50BGS</i>
+                        <div class="product_img">
+                            <img src="img/cap2.png" alt="모자2">
+                        </div>
+                    </div>
+                </div>
+                <div class="p3">
+                    <div class="product_left">
+                        <h3>조이 언스트럭쳐 볼캡 뉴욕앙키스</h3>
+                        <p>펠트 로고로 MLB만의 헤리티지를<br>
+                            전달하고 앞 크라운의 심지를 제거하여<br>
+                            언스트럭쳐의 형태로 내추럴하게<br>
+                            착용이 가능합니다. </p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>자세히보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>32CP88111-50B</i>
+                        <div class="product_img">
+                            <img src="img/cap3.png" alt="모자3">
+                        </div>
+                    </div>
+                </div>
+                <div class="p4">
+                    <div class="product_left">
+                        <h3>조이 언스트럭쳐 볼캡 LA다저스</h3>
+                        <p>뒤고리가 조절 가능한 OPEN BACK<br>
+                            형태로 되어 있어 두상에 맞게<br>
+                            사이즈 조절이 가능합니다.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>자세히보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>32CP88111-07N</i>
+                        <div class="product_img">
+                            <img src="img/cap4.png" alt="모자4">
+                        </div>
+                    </div>
+                </div>
+                <div class="p5">
+                    <div class="product_left">
+                        <h3>조이 언스트럭쳐 볼캡 LA다저스</h3>
+                        <p>베이직 컬러부터 포인트 컬러까지,<br>
+                            다양한 컬러웨이로 구성하여 팀 로고와<br>
+                            함께 취향대로 고를 수 있습니다.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>자세히보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>32CP88111-07G</i>
+                        <div class="product_img">
+                            <img src="img/cap5.png" alt="모자5">
+                        </div>
+                    </div>
+                </div>
+                <div class="p6">
+                    <div class="product_left">
+                        <h3>조이 언스트럭쳐 볼캡 보스턴 레드삭스</h3>
+                        <p>2단 펠트 와펜 로고가 MLB만의<br>
+                            아이덴티티를 전달합니다. 뒤고리가 조절<br>
+                            가능한 OPEN BACK 형태로 되어 있어<br>
+                            사이즈 조절이 가능합니다.</p>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"></div>
+                                <div class="li_des">
+                                    <button>자세히보기</button>
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_right">
+                        <i>3ACP8801N-43RDD</i>
+                        <div class="product_img">
+                            <img src="img/cap6.png" alt="모자6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section line_tab">
+            <!-- splide slide -->
+            <div class="line_tab_text">
+                <h1>NEW ARRIVAL</h1>
+                <h3>MLB HEART♥</h3>
+            </div>
+            <div class="membership">
+                <div class="membership_title">
+                    <!-- 썸네일 슬라이드 -->
+                    <div id="thumbnail-carousel" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">Cap<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <!-- <li>|</li> -->
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">Hap<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <!-- <li>|</li> -->
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">Top<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <!-- <li>|</li> -->
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">Outer<i class="fa-solid fa-play"></i></a>
+                                </li>
+                                <!-- <li>|</li> -->
+                                <li class="splide__slide">
+                                    <a href="javascript:void(0);">Dress<i class="fa-solid fa-play"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 이미지 슬라이드 -->
+                <div id="main-carousel" class="splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                <div class="splide_img">
+                                    <img src="img/4 img1.png" alt="cap">
+                                </div>
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des">
+                                    <h3>CAP 하트 언스트럭쳐 볼캡</h3>   
+                                    <h5>3ACPH032N-50IVS</h5>
+                                    <p>입체감 있는 패치 로고 포인트의<br>
+                                        하트 스트럭쳐 볼캡</p>
+                                    <span>·TOP 하트 데님 긴팔 셔츠 </span>
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <img src="img/4 img2.png" alt="cap">
+                                </div>
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des">
+                                    <h3>HET 하트버킷햇</h3>   
+                                    <h5>3AHTH012N-50BKS</h5>
+                                    <p>체인 자수 와펜 로고가 MLB만의<br>
+                                        아이덴티티를 전달합니다.</p>
+                                    <span>·TOP 하트 스몰로고 카라 티셔츠</span>
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <img src="img/4 img3.png" alt="cap">
+                                </div>
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des">
+                                    <h3>TOP 하트 입체로고<br>
+                                        컴포터블핏 맨투맨</h3>   
+                                    <h5>3ATSH1023-50BKS</h5>
+                                    <p>코튼 피케 조직으로 통풍성이 뛰어나며<br>
+                                        옷이 몸에 달라붙지 않는 소재입니다.</p>
+                                    <span>·HAT 하트 버킷햇<br>
+                                        ·SOCKS 하트 양말</span>
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <img src="img/4 img4.png" alt="cap">
+                                </div>
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des">
+                                    <h3>DRESS 하트 피케<br>반팔 원피스</h3>   
+                                    <h5>3FOP00723-50BKS</h5>
+                                    <p>혼방 손재로 건조가 우수하며 고급 면사를<br>
+                                        사용하여 표면이 깨끗하고 부드러운<br>
+                                        소재입니다.</p>
+                                </div>
+                              </li>
+                              <li class="splide__slide">
+                                  <!-- 탭내용 이미지 -->
+                                  <div class="splide_img">
+                                    <img src="img/4 img5.png" alt="cap">
+                                </div>
+                                <!-- 탭내용 설명 -->
+                                <div class="splide_des">
+                                    <h3>DRESS 하트 피케 반팔 원피스</h3>   
+                                    <h5>3FOP00723-50BKS</h5>
+                                    <p>코튼 피케 조직으로 통풍성이 뛰어나며<br>
+                                        옷이 몸에 달라붙지 않는 소재입니다.</p>
+                                    <span>·HAT 하트 버킷햇<br>
+                                        ·SOCKS 하트 양말</span>
+                                </div>
+                              </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section hive">
+            <div class="hive_text">
+                <h2>MLB T-SHIRTS</h2>
+                <span>COLLECTION</span>
+                <p>컬러와 스타일에 홀릭!<br>여름 원픽 #티셔츠 #반팔 #피케</p>
+            </div>
+            <div class="hive_box">
+                <div class="hive_right">
+                    <div class="hive_contents">
+                        <div class="hive_con1">
+                            <p>베이직 스몰로고 반팔 티셔츠 LA다저스</p>
+                        </div>
+                        <div class="hive_con2">
+                            <p>베이직 클래식 로고 반팔 티셔츠 LA다저스</p>
+                        </div>
+                        <div class="hive_con3">
+                            <p>베이직 클래식 로고 반팔 티셔츠 뉴욕앙키스</p>
+                        </div>
+                        <div class="hive_con4">
+                            <p>베이직 클래식 로고 반팔 티셔츠 뉴욕앙키스</p>
+                        </div>
+                        <div class="hive_con5">
+                            <p>베이직 클래식 로고 반팔 티셔츠 뉴욕앙키스</p>
+                        </div>
+                        <div class="hive_con6">
+                            <p>베이직 클래식 로고 반팔 티셔츠 뉴욕앙키스</p>
+                        </div>
+                    </div>
+                    <div class="hive_btns">
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"><img src="img/5t1.png" alt="티셔츠1"></div>
+                                <!-- 테두리 -->
+                                <div class="li_line">
+                                    <img src="img/border.png" alt="테두리">
+                                </div>
+                            </div>
+                            <p>07PPN</p>
+                        </div>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"><img src="img/5t2.png" alt="티셔츠2"></div>
+                                <!-- 테두리 -->
+                                <div class="li_line">
+                                    <img src="img/border.png" alt="테두리">
+                                </div>
+                            </div>
+                            <p>50WAN</p>
+                        </div>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"><img src="img/5t3.png" alt="티셔츠3"></div>
+                                <!-- 테두리 -->
+                                <div class="li_line">
+                                    <img src="img/border.png" alt="테두리">
+                                </div>
+                            </div>
+                            <p>50BKS</p>
+                        </div>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"><img src="img/5t4.png" alt="티셔츠4"></div>
+                                <!-- 테두리 -->
+                                <div class="li_line">
+                                    <img src="img/border.png" alt="테두리">
+                                </div>
+                            </div>
+                            <p>50COL</p>
+                        </div>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"><img src="img/5t5.png" alt="티셔츠5"></div>
+                                <!-- 테두리 -->
+                                <div class="li_line">
+                                    <img src="img/border.png" alt="테두리">
+                                </div>
+                            </div>
+                            <p>50GNS</p>
+                        </div>
+                        <div class="contents">
+                            <div class="hover_ani">
+                                <div class="li_bg"><img src="img/5t6.png" alt="티셔츠6"></div>
+                                <!-- 테두리 -->
+                                <div class="li_line">
+                                    <img src="img/border.png" alt="테두리">
+                                </div>
+                            </div>
+                            <p>07MGL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section photo">
+            <div class="photo_text">
+                <h1>22SS MLB COLLECTION<br>HOW TO STYLING</h1>
+                <p>가장 패셔너블하게 즐기는 MLB 스타일링 연출법</p>
+                <div class="contents">
+                    <div class="hover_ani">
+                        <div class="li_bg"></div>
+                        <div class="li_des">
+                            <button>MORE<br>VIEW</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section event">
+            <div class="event_left">
+                <!-- swiper slider -->
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <!-- <a href="#"><img src="img/7 kids1.png" alt="키즈1"></a> -->
+                        <div class="kids_text">
+                            <h4>바람막이도<br>
+                                반팔세트도</h4>
+                            <h2>톤톤으로 깔맞춤</h2>
+                            <p>#MLB키즈</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- <a href="#"><img src="img/7 kids2.png" alt="키즈2"></a> -->
+                        <div class="kids_text">
+                            <h4>팝하고 힘하게!</h4>
+                            <h2>키즈 라이크<br>
+                                컬렉션</h2>
+                            <p>#MLB키즈셋업</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- <a href="#"><img src="img/7 kids3.png" alt="키즈3"></a> -->
+                        <div class="kids_text">
+                            <h4>LOVE YOURSELF</h4>
+                            <h2>#MLB키즈하트</h2>
+                            <p>#맨투맨 #볼캡 #돔햇</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- <a href="#"><img src="img/7 kids4.png" alt="키즈4"></a> -->
+                        <div class="kids_text">
+                            <h4>MLB BABY LINE 런칭!</h4>
+                            <h2>MY FIRST MLB</h2>
+                            <p>#MLB베이비</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="event_right">
+                <h3>패셔니키즈를 위한 스페셜 혜택</h3>
+                <h1>Happy<br>children’s day</h1>
+                <span>event<br>MLBKIDS 상품 15만원 이상<br>구매 시, 우비세트 증정!</span>
+                <p>※사은품은 주문 1건 당 실 결제금액 기준으로 증정되며,<br>
+                    주문하신 삼품과 함계 배송됩니다.(성인, 펫 제품 제외)<br>
+                    ※반품 시 반드시 사은품(우비&가방)을 함께 동봉해 주셔야<br>
+                    환불 가능합니다.<br>
+                    ※본 행사는 온라인 공식몰 회원 대상 이벤트 입니다.</p>
+            </div>
+        </section>
+        <section class="section store">
+            <h1>MLB PROMOTION</h1>
+            <div class="store_box">
+                <div class="contents">
+                    <div class="hover_ani">
+                        <div class="li_bg bg1"></div>
+                        <div class="li_des des1">
+                            <b>01</b>
+                            <h2>KB국민카드<br>7%할인혜택</h2>
+                            <p>※선택순 혜택으로<br>조기마감 될 수 있습니다.</p>
+                            <button>더보기</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents">
+                    <div class="hover_ani">
+                        <div class="li_bg bg2"></div>
+                        <div class="li_des des2">
+                            <b>02</b>
+                            <p>MLB 공식몰 100% 당첨 리뷰이벤트</p>
+                            <h2>LUCKY<br>
+                                REVIEW</h2>
+                            <button>EVENT</button>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section fp-auto-height">
+            <div class="top">TOP</div>
+            <div class="footer_top">
+                <div class="tel">
+                    <div class="tel1">
+                        <span>CS CENTER</span>
+                        <p>080-807-0012</p>
+                    </div>
+                    <div class="tel2">
+                        <p>이용시간 평일 9:00~18:00</p>
+                        <p>점심시간 12:00~13:00</p>
+                    </div>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="img/blog.png" alt="블로그"></a></li>
+                        <li><a href="#"><img src="img/instagram.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="img/facebook.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/youtube.png" alt="유튜브"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="addr">
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                    <address>
+                        주식회사 에프엔에프<br>
+                        대표/김창수&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   주소/서울특별시 강남구 언주로541 에프엔에프빌딩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   사업자등록증/153-81-02451 통산판매업<br>
+                        신고번호/제2021-서울강남-03353&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   개인정보보호책임자/최성진
+                    </address>
+                    <p>COPYRIGHT F&F CO.LTD.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="footer_logo">
+                    <a href="#"><img src="img/logo_footer.png" alt="푸터로고"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+     $('.product').slick({
+         dots: true,
+         infinite: true,
+         speed: 500,
+         fade: true,
+        cssEase: 'linear'
+    });
+    </script>
+</body>
+</html>
